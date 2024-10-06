@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    flex-grow: 1;
+}
+.navbar-logo span {
+    color: teal;
+}
+.navbar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    flex-grow: 2;
+}
+.navbar input[type="text"]::placeholder {
+    color: #888;
+}
+.navbar .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar .icons div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.navbar .location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar input[type="text"] {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .navbar .icons {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo {
+        font-size: 20px;
+    }
+    .navbar input[type="text"] {
+        width: 100%;
+        padding: 8px;
+    }
+    .navbar .icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
