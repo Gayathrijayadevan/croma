@@ -240,3 +240,114 @@ body {
       margin: 0 0 15px 0; /
     }
   }
+
+  /*---------------------------------------------------*/
+  .whats-hot {
+    padding: 20px;
+    background-color: rgba(25,25,25,255);
+}
+.whats-hot h2 {
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+.card {
+    background-color: rgba(25,25,25,255);
+    border-radius: 10px;
+    width: calc(23% - 24px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.note {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+/*---------------------------------------------------------*/
+.limited_time_deal {
+    max-width:100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(25,25,25,255);
+  }
+
+  .limited_time_deal h2 {
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 100px;
+  }
+
+  .offers_section {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .offercard {
+    background-color:white;
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 38%;
+    min-width: 150px; 
+    height: 300px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .offercard:hover {
+    transform: scale(1.02);
+  }
+
+  .offercard img {
+    width: 190%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .offercard {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .limited_time_deal h2 {
+      font-size: 1.5rem;
+    }
+    .offercard {
+      flex-direction: column; 
+      text-align: center;
+      padding: 15px;
+    }
+    .offercard img {
+      margin: 0 0 15px 0; /
+    }
+  }
