@@ -326,7 +326,7 @@ body {
 
   .offercard img {
     width: 190%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
   }
@@ -351,3 +351,127 @@ body {
       margin: 0 0 15px 0; /
     }
   }
+  /*----------------------------------------*/
+.croma_collection {
+    max-width:100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(25,25,25,255);
+  }
+  .collection_section {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    flex-wrap: wrap;  
+  }
+
+  .collection_banner {
+    background-color:white;
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    min-width: 200px; 
+    height: 350px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .collection_banner:hover {
+    transform: scale(1.02);
+  }
+
+  .collection_banner img {
+    width: 190%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .collection_banner {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .collection_banner {
+      flex-direction: column; 
+      text-align: center;
+      padding: 15px;
+    }
+    .collection_banner {
+      margin: 0 0 15px 0; /
+    }
+  }
+
+  /*-----------------------------------------------*/
+  .no_more_worry_section {
+    max-width:100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(25,25,25,255);
+  }
+
+  .no_more_worry_section h2 {
+    margin-bottom: 40px;
+    font-size: 1.7rem;
+    font-weight:600;
+    color: white;
+    margin-left: 100px;
+  }
+
+  .pic_section {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .banner_img {
+    background-color:white;
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    min-width: 150px; 
+    height: 200px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .banner_img:hover {
+    transform: scale(1.02);
+  }
+
+  .banner_img img {
+    width: 190%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .banner_img {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .no_more_worry_section h2 {
+      font-size: 1.5rem;
+    }
+    .banner_img {
+      flex-direction: column; 
+      text-align: center;
+      padding: 15px;
+    }
+    .banner_img img {
+      margin: 0 0 15px 0; /
+    }
+  }
+
