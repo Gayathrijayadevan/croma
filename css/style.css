@@ -474,4 +474,49 @@ body {
       margin: 0 0 15px 0; /
     }
   }
-
+/*----------------------------------------------------------*/
+.Deals_Of_The_Day {
+  padding: 20px;
+  background-color: rgba(25,25,25,255);
+}
+.Deals_Of_The_Day h2 {
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+.deal-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+.cards {
+  background-color: rgba(25,25,25,255);
+  border-radius: 10px;
+  width: calc(23% - 24px);
+  height: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.cards:hover {
+  transform: translateY(-5px);
+}
+.cards img {
+  width: 100%;
+  border-radius: 10px;
+  height: 400px;
+}
+.note {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .cards {
+      width: calc(50% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .cards {
+      width: 100%;
+  }
+}
