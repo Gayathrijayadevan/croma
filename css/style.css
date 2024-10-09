@@ -520,3 +520,139 @@ body {
       width: 100%;
   }
 }
+
+/*----------------------------------------*/
+.experience_croma_section {
+  max-width:100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(25,25,25,255);
+}
+
+.experience_croma_section h2 {
+  margin-bottom: 40px;
+  font-size: 1.7rem;
+  font-weight:600;
+  color: white;
+  margin-left: 100px;
+}
+
+.pic {
+  display: flex;
+  justify-content:center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.imge {
+  background-color:white;
+  color: black;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  min-width: 150px; 
+  height: 200px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.imge:hover {
+  transform: scale(1.02);
+}
+
+.imge img {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .imge {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .experience_croma_section h2 {
+    font-size: 1.5rem;
+  }
+  .imge {
+    flex-direction: column; 
+    text-align: center;
+    padding: 15px;
+  }
+  .imge img {
+    margin: 0 0 15px 0; /
+  }
+}
+/*------------------------------------------------------*/
+.exclusively_container {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+.title {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+.icon-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.icon-box {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  width: 120px;
+  text-align: center;
+  transition: transform 0.2s;
+  box-sizing: border-box; 
+}
+.icon-box:hover {
+  transform: scale(1.1);
+}
+.icon-box img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.icon-title {
+  font-size: 0.9em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .title {
+      font-size: 1.2em;
+  }
+  .icon-box {
+      width: 100px; 
+      padding: 15px;
+  }
+  .icon-box img {
+      width: 35px;
+      height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+      font-size: 1em;
+  }
+  .icon-box {
+      width: 80px; 
+      padding: 10px;
+  }
+  .icon-box img {
+      width: 30px;
+      height: 30px;
+  }
+  .icon-title {
+      font-size: 0.8em;
+  }
+}
