@@ -694,6 +694,13 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .exclusively_container{
+    height: 100px;
+    width: 100%;
+  }
+  .icon-row{
+    gap: 1px;
+  }
   
   .icon-box {
       width: 100px; 
@@ -706,14 +713,20 @@ body {
 }
 
 @media (max-width: 480px) {
-  
+  .exclusively_container{
+    height: 100px;
+    width: 100%;
+  }
+  .icon-row{
+    gap: 1px;
+  }
   .icon-box {
       width: 100px; 
       padding: 10px;
   }
   .icon-box img {
-      width: 40px;
-      height: 30px;
+      width: 50px;
+      height: 40px;
   }
   .title {
     margin-right: 20px;
@@ -931,6 +944,7 @@ body {
       min-width: 100%;
       margin: 0;
       padding: 0 10px;
+      height: 80%;
   }
 }
 
@@ -938,6 +952,16 @@ body {
   .social-icons {
       justify-content: center;
   }
+  .footer-column{
+    height: 50%;
+    width: 100%;
+    background-color:rgba(29,29,29,255);
+  }
+  .footer-row{
+    background-color:rgba(29,29,29,255);
+    
+  }
+  
 }
 /*-----------------------------------------------------------------*/
 .last_carosel{
