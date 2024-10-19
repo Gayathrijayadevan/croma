@@ -88,14 +88,14 @@ body {
   align-items: center;
   /* overflow-x: hidden; */
 }
-.cont11{
+.contains{
   /* background-color: aqua; */
   min-width: 7vw;
   max-height:20vh;
   margin-bottom: 70px;
   text-align: center;
 }
-.cont11 img{
+.contains img{
   margin-top: 50px;   
   width: 100%;
   height: 100%;
